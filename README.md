@@ -64,6 +64,8 @@ You can find sample gRPC servers from the below table.
 
 8. Add the below script under `Script Based Adaptive Authentication` and update. Here we used a test script by giving sample JSON Object to the GrpcInvoke function.
 
+- Replace the values of `host` and `port` from the respective values you copied from the [previous step](#implementing-grpc-server).
+
 
 ```jsp
 // GrpcInvoke Test Template...
@@ -80,7 +82,7 @@ var onLoginRequest = function(context) {
                              "age" : 21};
             
             // Invoking gRPC function
-            var grpcResponse = grpcInvoke('localhost', '8060', jsonObject, {
+            var grpcResponse = grpcInvoke('<host>', '<port>', jsonObject, {
                 onSuccess : function(context, data) {
                     Log.info('Successfully recieved the response from gRPC service.');
                     executeStep(2);
