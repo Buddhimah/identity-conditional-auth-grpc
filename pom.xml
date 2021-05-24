@@ -144,7 +144,7 @@
         <dependency>
             <groupId>org.wso2.carbon.identity.conditional.auth.functions</groupId>
             <artifactId>org.wso2.carbon.identity.conditional.auth.functions.test.utils</artifactId>
-            <version>${project.version}</version>
+            <version>${identity.conditional.auth.functions.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -172,7 +172,7 @@
         <dependency>
             <groupId>org.wso2.carbon.identity.conditional.auth.functions</groupId>
             <artifactId>org.wso2.carbon.identity.conditional.auth.functions.common</artifactId>
-            <version>${project.version}</version>
+            <version>${identity.conditional.auth.functions.version}</version>
         </dependency>
     </dependencies>
 
@@ -445,6 +445,7 @@
         <carbon.identity.framework.version>5.18.123</carbon.identity.framework.version>
         <identity.governance.version>1.1.17</identity.governance.version>
         <identity.event.handler.notification.version>[1.0.23,2.0.0)</identity.event.handler.notification.version>
+        <identity.conditional.auth.functions.version>1.1.9</identity.conditional.auth.functions.version>
 
         <commons-lang.wso2.version>2.6.0.wso2v1</commons-lang.wso2.version>
         <pax.logging.api.version>1.10.1</pax.logging.api.version>
